@@ -22,24 +22,24 @@ const data= [{"date":"01/01/23","id":1,"score":65,
 {/*inicio cards*/}
 <div className="row">
   <div className="col-sm-6 mb-3 mb-sm-0">
-  <div className="card text-center border-primary">
-  <div className="card-header border-primary bg-primary  bg-opacity-25">
+  <div className="card text-center ">
+  <div className="card-header bg-primary  bg-opacity-25">
     Mejor Puntaje
   </div>
-  <div className="card-body border-primary">
+  <div className="card-body ">
     <h5 className="card-title text-primary">Tu mejor puntaje: 90 pts</h5>
     <p className="card-text">Tu Ranking: Puesto 16th en la liga Regional</p>
     <p className="card-text">Mejor puntaje Regional: 98</p>
   </div>
-  <div className="card-footer border-primary ">
+  <div className="card-footer  ">
      logrado el 01/02/23
   </div>
 </div>
   </div>
   {/*Card 2*/}
   <div className="col-sm-6">
-  <div className="card border-primary text-center">
-  <div className="card-header bg-primary  bg-opacity-25 border-primary">
+  <div className="card  text-center">
+  <div className="card-header bg-primary  bg-opacity-25 ">
     Mejor Tiempo
   </div>
   <div className="card-body">
@@ -47,7 +47,7 @@ const data= [{"date":"01/01/23","id":1,"score":65,
     <p className="card-text">Tu Ranking: Puesto 22th en la liga regional</p>
     <p className="card-text">Mejor Tiempo Regional: 2.75 seg</p>
   </div>
-  <div className="card-footer border-primary ">
+  <div className="card-footer  ">
    logrado el 01/03/23
   </div>
 </div>
