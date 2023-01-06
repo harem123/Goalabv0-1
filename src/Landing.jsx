@@ -1,5 +1,5 @@
 import React from "react"
-
+import {Link} from "react-router-dom"
 
 
 function Landing() {
@@ -15,7 +15,9 @@ function Landing() {
           <div class="col-lg-5 mx-auto">
             <p class="lead mb-4">Mejora tu tecnica de juego 10 veces mas rapido</p>
             <div class="g-grip gap-2 d-sm-flex justify-content-sm-center">
-              <button type="button" class="btn btn-primary btn-lg px-4">Ingresa</button>
+            <Link to="/results">
+              <button type="button" class="btn btn-primary btn-lg px-4">Aqui Tus Resultados</button>
+            </Link>
             </div>
             </div>
           </div>
