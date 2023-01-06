@@ -24,8 +24,8 @@ const data= [{"date":"01/01/23","id":1,"score":100,
                     Tiempo Promedio
                   </th>
                   <th width="20%" className="table-primary">puntaje</th>
-                  <th width="10%" className="table-primary">Tot Failed</th>
-                  <th width="25%" className="table-primary">Tot Hit</th>
+                  <th width="10%" className="table-primary">Fallados</th>
+                  <th width="25%" className="table-primary">Aciertos</th>
                 </tr>
               </thead>
               <tbody>
