@@ -1,13 +1,27 @@
 import { defineConfig, loadEnv } from 'vite'
 import react from '@vitejs/plugin-react'
 
-export default ({ mode }) => {
-    process.env = {...process.env, ...loadEnv(mode, process.cwd())};
+export default defineConfig(({ mode }) => {
+
+const env = loadEnv(
+  'mock', 
+  process.cwd(),
+  '' 
+)
+  const processEnvValues = {
+    'process.env': Object.entries(env).reduce(
+      (prev, [key, val]) => {
+        return {
+          ...prev,
+          [key]: val,
+        }
+      },
+      {},
+    )
+  }
 
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [react()],
-  server: {
-            port: parseInt(process.env.VITE_PORT),
-        },
+  define: processEnvValues
 })
